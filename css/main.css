@@ -133,6 +133,21 @@ h2 {
   visibility: hidden;
 }
 */
+.modal {
+  z-index: 600;
+  position: fixed;
+  /* Stay in place */
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
 #newsletter {
   max-height: 300px;
   max-width: 500px;
@@ -143,6 +158,7 @@ h2 {
   color: #212121;
   font-family: "Raleway";
   display: none;
+  margin-top: 150px;
 }
 
 #newsletter h1 {
