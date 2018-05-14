@@ -156,7 +156,7 @@ h2 {
   border-radius: 15px;
   border: 2px solid #99989f;
   color: #212121;
-  font-family: "Raleway";
+  font-family: "Raleway-light";
   display: none;
   margin-top: 150px;
 }
@@ -207,6 +207,126 @@ h2 {
   padding-right: 15px;
   padding-top: 10px;
   color: #6A5AFF;
+}
+
+.notification {
+  height: 50px;
+  width: 100vw;
+  background-color: #6A5AFF;
+  color: white;
+  z-index: 400;
+  display: block;
+}
+
+.choose {
+  display: inline;
+  float: left;
+  margin-right: 50px;
+}
+
+.notification-content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notification-content p {
+  font-size: 0.9rem;
+  padding-top: 15px;
+}
+
+#notification-close-btn {
+  padding-right: 25px;
+}
+
+.notification-change {
+  font-family: "Raleway-light";
+  margin-top: 100px;
+}
+
+.notification-change select {
+  border-radius: 25px;
+  background-color: #6A5AFF;
+  color: white;
+}
+
+#multi-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+#multi-menu ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#multi-menu ul a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+
+#multi-menu ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#multi-menu ul li.multi-menu-item {
+  background: #ddd;
+}
+
+#multi-menu ul li:hover {
+  background: #6A5AFF;
+  box-shadow: 0 0 10px #6A5AFF;
+}
+
+#multi-menu ul li:hover a:hover {
+  color: white;
+}
+
+#multi-menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 0;
+}
+
+#multi-menu ul ul li {
+  float: none;
+  width: 200px;
+}
+
+#multi-menu ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+  color: black;
+}
+
+#multi-menu ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+#multi-menu ul ul ul ul a {
+  color: red;
+}
+
+#multi-menu ul ul ul ul li:hover {
+  display: block;
+}
+
+#multi-menu ul li:hover > ul {
+  display: block;
 }
 
 header {

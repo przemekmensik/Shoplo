@@ -15,6 +15,7 @@
 
 <body>
 
+
 <div class="modal">
 
 
@@ -25,11 +26,11 @@
     <div>
       <h1>Newsletter</h1>
       <p>Zapisz się do naszego newslettera i bądź na bieżąco!</p>
-    <form action="" method="post" role="form">
+    <form action="action_page.php" method="post" role="form">
       <input class="form-control" type="text" id="" name=""
         placeholder="twój@email.com" required>
       <div class="button-holder">
-        <input type="submit" value="Subscribe" class="newsletter-button">
+        <input type="submit" value="Wyslij" class="newsletter-button">
       </div>
     </form>
     </div>
@@ -37,6 +38,45 @@
 </div>
 </div>
 
+<div class="notification">
+  <span class="close" id="notification-close-btn">&times;</span>
+
+
+
+  <div class="notification-content">
+    <p>Pasek informacyjny na górze strony, który klient może zamknąć. 
+</p>
+  </div>
+
+
+</div>
+
+<div class="notification-change">
+  <div>Dostosuj szablon</div>
+  <div class="choose">
+    <p>Wybierz kolor textu:</p>
+    <select name="color" id="color">
+      <option value="">white</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+    </select>
+  </div>
+  <div class="choose">
+    <p>Wybierz kolor tła:</p>
+    <select name="background" id="background">
+      <option value="">violet</option>
+      <option value="#ff4c6b">pink</option>
+      <option value="green">green</option>
+    </select>
+  </div>
+  <div>
+    <p>Pokaż/ukryj pasek:</p>
+    <select name="show" id="show-notification">
+      <option value="show">Pokaż</option>
+      <option value="hide">Ukryj</option>
+    </select>
+  </div>
+</div>
 
   <header>
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -76,6 +116,8 @@
   </nav>
   </div>
 
+
+
   <div id="home">
     <nav id="navigation-bar" class="container-fluid navbar-fixed-top" role="navigation">
       <div class="menu">
@@ -112,6 +154,32 @@
   </div>
   </header>
 
+  <nav id="multi-menu">
+    <ul>
+      <li class="multi-menu-item"><a href="#">Home</a></li>
+      <li><a href="#">Menu 1</a>
+        <ul>
+          <li><a href="#">Submenu 1</a></li>
+          <li><a href="#">Submenu 2</a></li>
+          <li><a href="#">Submenu 3</a>
+            <ul>
+              <li><a href="#">Deepmenu 1</a>
+                <ul>
+                  <li><a href="#">Subdeep 1</a></li>
+                  <li><a href="#">Subdeep 2</a></li>
+                  <li><a href="#">Subdeep 3</a></li>
+                  <li><a href="#">Subdeep 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Menu 4</a></li>
+    </ul>
+  </nav>
 
 <div id="about">
   <div class="container">
