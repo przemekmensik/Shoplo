@@ -216,12 +216,15 @@ h2 {
   color: white;
   z-index: 400;
   display: block;
+  position: fixed;
+  top: 0;
 }
 
 .choose {
   display: inline;
   float: left;
-  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .notification-content {
@@ -231,7 +234,8 @@ h2 {
 
 .notification-content p {
   font-size: 0.9rem;
-  padding-top: 15px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 #notification-close-btn {
@@ -240,13 +244,33 @@ h2 {
 
 .notification-change {
   font-family: "Raleway-light";
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60vw;
 }
 
 .notification-change select {
   border-radius: 25px;
-  background-color: #6A5AFF;
+  background-color: #8c8c8c;
   color: white;
+  padding: 10px;
+}
+
+.notification-change-content {
+  display: inline-block;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.notification-change-content p {
+  padding-bottom: 25px;
+}
+
+#multi-menu {
+  margin-top: 50px;
 }
 
 #multi-menu a {
@@ -277,6 +301,7 @@ h2 {
   float: left;
   margin: 0;
   padding: 0;
+  background: #bbbbbb;
 }
 
 #multi-menu ul li.multi-menu-item {
@@ -309,16 +334,11 @@ h2 {
 #multi-menu ul ul a {
   line-height: 120%;
   padding: 10px 15px;
-  color: black;
 }
 
 #multi-menu ul ul ul {
   top: 0;
   left: 100%;
-}
-
-#multi-menu ul ul ul ul a {
-  color: red;
 }
 
 #multi-menu ul ul ul ul li:hover {

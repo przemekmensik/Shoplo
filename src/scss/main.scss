@@ -216,12 +216,15 @@ h2 {
 	color: white;
 	z-index: 400;
 	display: block;
+	position: fixed;
+	top: 0;
 }
 
 .choose {
 	display: inline;
 	float: left;
-	margin-right: 50px;
+	padding-left: 50px;
+	padding-right:  50px;
 }
 
 .notification-content {
@@ -230,8 +233,8 @@ h2 {
 	//font-family: "Raleway-light";
 	p {
 		font-size: 0.9rem;
-		padding-top: 15px;
-		//padding-bottom: auto;
+		padding-top: 17px;
+		padding-bottom: 17px;
 	}
 }
 
@@ -241,15 +244,35 @@ h2 {
 
 .notification-change {
 	font-family: "Raleway-light";
-	margin-top: 100px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 60vw;
+	//background-color: rgb(91, 203, 99);
 	select {
 		border-radius: 25px;
-		background-color: #6A5AFF;
+		//background-color: #6A5AFF;
+		background-color: rgb(140, 140, 140);
 		color: white;
+		padding: 10px;
+	}
+}
+
+.notification-change-content {
+	//padding-left: 50px;
+	display: inline-block;
+	//width: 80%;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	p{
+		padding-bottom: 25px;
 	}
 }
 
 #multi-menu {
+	margin-top: 50px;
 
 	a {
 		color: white;
@@ -277,7 +300,8 @@ h2 {
 			position:relative;
 			float:left;
 			margin:0;
-			padding:0
+			padding:0;
+			background: rgb(187, 187, 187);
 		}
 	}
 }
@@ -318,7 +342,6 @@ h2 {
 	a{
 		line-height:120%;
 		padding:10px 15px;
-		color: black;
 	}
 }
 
@@ -328,9 +351,6 @@ h2 {
 	left:100%;
 
 	ul {
-		a {
-			color: red;
-			}
 		li {
 			&:hover {
 				display: block;
