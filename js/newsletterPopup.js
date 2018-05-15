@@ -1,26 +1,25 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  window.addEventListener("load", function(){
+  window.addEventListener("load", function() {
 
       var newsletter = document.getElementById("newsletter");
       var modal = document.querySelector(".modal");
 
-
-      setTimeout(function(){ newsletter.style.display = "block"; modal.style.display = "block";}, 1000);
-
+      setTimeout(function() {
+        newsletter.style.display = "block";
+        modal.style.display = "block";
+      }, 1000);
     });
 
 //close modal
 
-    var modal = document.querySelector(".modal");
-    console.log(modal);
+      var modal = document.querySelector(".modal");
+      console.log(modal);
 
-  document.getElementById("close-btn").addEventListener("click", function(){
-
-      newsletter.style.display = "none";
-      modal.style.display = "none";
-
+  document.getElementById("close-btn").addEventListener("click", function() {
+        newsletter.style.display = "none";
+        modal.style.display = "none";
     });
 
 //top notification bar text color
